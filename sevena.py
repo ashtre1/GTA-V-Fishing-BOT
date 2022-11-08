@@ -10,9 +10,6 @@ import random
 from win32gui import GetWindowText, GetForegroundWindow
 from tkinter import *
 
-
-
-
 print("SevenA GTA:V BOT")
 TriggerBot_Status = False
 AntiAfk_Status = False
@@ -38,8 +35,6 @@ def balikcalis(ftimes):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         cv2.imshow("screenshot", img)
         time.sleep(0.1)
-
-
 
 def AntiAfk_Move():
     time.sleep(5)
@@ -98,7 +93,6 @@ y = (hs/2) - (h/2)
 window.geometry('%dx%d+%d+%d' % (w, h, x, y))
 window.configure(background="#010221")
 
-
 lbl = Label(window, bg="#010221", fg="#07aaaf", font=5, text="Oto Balık", padx = 30, pady = 10)
 
 lbl.grid(column=0, row=0)
@@ -122,11 +116,9 @@ btn = Button(window, bg="#010221", fg="#07aaaf", text="Tıkla", command=AntiAFK_
 
 btn.grid(column=0, row=1)
 
-
 #---------------------------------------------------
 
 def looping():
-
 
     if keyboard.is_pressed('k'):
         AntiAFK_ChangeStatus()
